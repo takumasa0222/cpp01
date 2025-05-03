@@ -6,18 +6,17 @@
 #    By: tamatsuu <tamatsuu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 00:43:14 by tamatsuu          #+#    #+#              #
-#    Updated: 2025/05/03 22:53:44 by tamatsuu         ###   ########.fr        #
+#    Updated: 2025/05/03 22:56:50 by tamatsuu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = unnecessary_violence
+NAME = sed
 CC = c++
-INCLUDES = -I ./
+INCLUDES = -I includes
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS    =   main.cpp \
-			HumanA.cpp \
-			HumanB.cpp \
-			Weapon.cpp
+			srcs/FileOperator.cpp \
+			srcs/SedApp.cpp 
 OBJS    = $(SRCS:.cpp=.o)
 LIBDIR  = 
 LIBS    = 
@@ -35,6 +34,7 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
+	rm -f *.replace
 
 re: fclean all
 

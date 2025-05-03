@@ -6,11 +6,11 @@
 #    By: tamatsuu <tamatsuu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 00:43:14 by tamatsuu          #+#    #+#              #
-#    Updated: 2025/05/03 16:02:13 by tamatsuu         ###   ########.fr        #
+#    Updated: 2025/05/03 22:54:25 by tamatsuu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ex01
+NAME = horde_of_zombies
 CC = c++
 INCLUDES = -I ./
 CFLAGS = -Wall -Wextra -Werror -std=c++98
