@@ -6,7 +6,7 @@
 /*   By: tamatsuu <tamatsuu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 20:26:10 by tamatsuu          #+#    #+#             */
-/*   Updated: 2025/05/03 23:41:41 by tamatsuu         ###   ########.fr       */
+/*   Updated: 2025/05/03 23:12:23 by tamatsuu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # define INFO_MSG "I cannot believe adding extra bacon costs more money. You didn’t put enough bacon in my burger! If you did, I wouldn’t be asking for more!"
 # define WARN_MSG "I think I deserve to have some extra bacon for free. I’ve been coming for years, whereas you started working here just last month."
 # define ERROR_MSG "This is unacceptable! I want to speak to the manager now."
-# define OTHER_MSG "[ Probably complaining about insignificant problems ]"
+
 class Harl {
 	public:
 		void complain( std::string level );
