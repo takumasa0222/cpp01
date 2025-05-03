@@ -5,23 +5,27 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamatsuu <tamatsuu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/01 02:12:53 by tamatsuu          #+#    #+#             */
-/*   Updated: 2025/05/03 16:01:49 by tamatsuu         ###   ########.fr       */
+/*   Created: 2025/05/03 16:04:35 by tamatsuu          #+#    #+#             */
+/*   Updated: 2025/05/03 16:27:50 by tamatsuu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
 #include <iostream>
 
 int main(void)
 {
-	int i;
-	i = 7;
-	Zombie *zombies;
-
-	zombies = zombieHorde(7, "test");
-	for (int j = 0; j < i; j++)
-		zombies->announce();
-	delete[] zombies;
-	return 0;
+	std::string str;
+	std::string *stringPTR;
+	std::string &stringREF = str;
+	str = "HI THIS IS BRAIN";
+	stringPTR = &str;
+	std::cout << "string address: " << &str << std::endl;
+	std::cout << "stringPTR held: " <<stringPTR << std::endl;
+	std::cout << "stringREF held: " <<&stringREF << std::endl;
+	
+	std::cout << "string    value: " << str << std::endl;
+	std::cout << "stringPTR value: " << *stringPTR << std::endl;
+	std::cout << "stringREF value: " << stringREF << std::endl;
+	
+	
 }

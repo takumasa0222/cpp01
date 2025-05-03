@@ -6,17 +6,15 @@
 #    By: tamatsuu <tamatsuu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/27 00:43:14 by tamatsuu          #+#    #+#              #
-#    Updated: 2025/05/03 16:02:13 by tamatsuu         ###   ########.fr        #
+#    Updated: 2025/05/03 16:04:48 by tamatsuu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = ex01
+NAME = ex02
 CC = c++
 INCLUDES = -I ./
 CFLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS    =   main.cpp \
-			zombieHorde.cpp \
-			Zombie.cpp 
+SRCS    =   main.cpp 
 OBJS    = $(SRCS:.cpp=.o)
 LIBDIR  = 
 LIBS    = 

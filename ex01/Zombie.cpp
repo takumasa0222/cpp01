@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tamatsuu <tamatsuu@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*   By: tamatsuu <tamatsuu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 02:15:30 by tamatsuu          #+#    #+#             */
-/*   Updated: 2025/05/01 02:42:43 by tamatsuu         ###   ########.fr       */
+/*   Updated: 2025/05/03 15:55:52 by tamatsuu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,15 @@ Zombie::~Zombie()
 }
 
 Zombie::Zombie(std::string name)
+{
+	this->name = name;
+}
+
+Zombie::Zombie(void)
+{
+}
+
+void Zombie::set_name(std::string name)
 {
 	this->name = name;
 }
